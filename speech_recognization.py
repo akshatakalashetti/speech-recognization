@@ -64,8 +64,8 @@ def sendEmail(to,content):
     server =  smtplib.SMTP('smtp.gmail.com',587)
     server.ehlo()
     server.starttls()
-    server.login('shinchandoremon2001@gmail.com', password in string)
-    server.sendmail('shinchandoremon2001@gmail.com', to, content)
+    server.login('write from email', password in string)
+    server.sendmail('write from email', to, content)
     server.close()
 
 
@@ -108,7 +108,7 @@ elif 'email to friend' in query:
     try:
         speak("what should i send? ")
         content = takecommand()
-        to = "akshatakalashetty2001@gmail.com"
+        to = "write to email"
         sendEmail(to, content)
         speak("your mail sent successfully")
     
